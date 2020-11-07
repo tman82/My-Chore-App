@@ -1,22 +1,117 @@
+html, body {
+  overflow-x: hidden;
+}
+
 .App {
+  background: #D7DAE6;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+*:focus {
+  outline: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#main-div {
+  text-align: center;
+  background: #fff;
+  height: 940px;
+}
+
+.main-col {
+  padding: 0px !important;
+}
+
+.top-nav {
+  background: rgba(0,0,0,0.8);
+  font-family: 'Lexend Deca', sans-serif !important;
+}
+
+.link-style {
+  color: #fff;
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+.link-style:hover {
+  text-decoration: none !important;
+  color:#fff;
+}
+
+.search-bar-div {
+  background: #fff;
+  text-align: center;
+  border-top: 0.5px solid #ccc;
+  border-bottom: 0.5px solid #ccc;
+  margin-bottom: 30px;
+  margin-left: -30px;
+  margin-right: -30px;
+  padding: 20px 0px;
+}
+
+.search-bar-div input {
+  height: 34px;
+  width: 400px;
+  padding-left: 10px;
+  border-radius: 2px;
+  box-shadow: none !important;
+  border: 1px solid #ccc !important;
+}
+
+.chore-component-div {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  /*flex-direction: row;*/
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.chore-data-div {
+  background: #fff;
+  width: 400px;
+  height: 230px;
+  margin: 20px;
+  padding-top: 45px;
+  border-radius: 6px;
+  justify-content: center;
+  border: solid #ccc 1px;
 }
+
+.chore-data-div .badge {
+  padding: 10px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 14px;
+  min-width: 100px;
+  margin-top: 11px;
+  border: 1px solid black;
+  border-radius: 35px;
+  padding-bottom: 15px;
+}
+
+.chore-data-div .title {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #111;
+}
+
+.chore-data-div .completed {
+  color: #959595;
+  font-weight: 400;
+}
+
+.chore-data-div h4 {
+  font-family: 'Lexend Deca', sans-serif !important;
+}
+
+.chore-data-div:hover .delete-button {
+  display: block;
+}
+
+.delete-button {
+  display: none;
+  padding-right: 11px !important;
+  padding-top: 10px;
+}
+
+
+
+
+
+

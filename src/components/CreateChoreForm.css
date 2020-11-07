@@ -1,0 +1,115 @@
+.plusImage {
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+
+.Modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.Modal input {
+    height: 34px;
+    width: 400px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    border-radius: 2px;
+    box-shadow: none !important;
+    border: 1px solid #ccc;
+}
+
+.modal-style {
+    width: 600px;
+    height: 360px;
+    
+}
+
+.modal-button {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    min-width: 100px;
+    margin-top: 0px;
+    padding: 20px 0px 20px 0px !important;
+    line-height: 0px;
+    border: 2px solid black !important;
+    border-radius: 35px;
+    background: white !important;
+    
+}
+
+.Modal button:not(.exitButton) {
+    padding: 13px 35px;
+    background: #fff;
+    /*border: 1px solid black;*/
+    border-radius: 35px !important;
+    font-size: 18px;
+    color: black;
+}
+
+.modalBackground {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease-in-out;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+}
+
+
+.Modal button {
+    color: black;
+}
+
+.modalShowing-true {
+    opacity: 1;
+    pointer-events: visible;
+}
+
+.modalInner {
+    background: white;
+    width: 900px;
+    max-width: calc(100% - 60px);
+    margin: auto;
+    border: solid #ccc 1px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    text-align: left;
+}
+
+.modalText {
+    padding: 15px;
+}
+  
+.modalText p {
+    line-height: 180%;
+}
+
+.modalText button {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.exitButton {
+    padding: 15px;
+    display: block;
+    /*width: 100%;*/
+    background-color: transparent;
+    border: 0;
+    color: white;
+}
+
+
