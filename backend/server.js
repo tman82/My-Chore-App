@@ -12,7 +12,7 @@ let Chore = require("./chore.model");
 app.use(cors());
 app.use(bodyParser.json());
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://tre1238:c4t0ugCOi411boy1@trecluster-e058a.mongodb.net/chore-db?retryWrites=true&w=majority", { /*  Old "mongodb://127.0.0.1:27017/choreDb"  */
+mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://tre1238:c4t0ugCOi411boy1@trecluster-e058a.mongodb.net/chore-db.chores?retryWrites=true&w=majority", { /*  Old "mongodb://127.0.0.1:27017/choreDb"  */
   useUnifiedTopology: true,
   useNewUrlParser: true
 });
