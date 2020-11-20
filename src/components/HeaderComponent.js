@@ -6,7 +6,7 @@ export default class HeaderComponent extends Component {
         return(
             <Router>
                 <div className="container-fluid top-nav">
-                    <Link className="link-style" to="/">Chore</Link>
+                    <Link className="link-style" to="/">Choresss</Link>
                     <Route path="/:id" />
                 </div>
             </Router>
