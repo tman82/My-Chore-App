@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
-const cors = require("cors");
+// const cors = require("cors");
 const mongoose = require("mongoose");
 const choreRoutes = express.Router();
 const path = require('path')
@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 4000;
 
 let Chore = require("./chore.model");
 
-app.use(cors());
+// app.use(cors());
 app.use(bodyParser.json());
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://tre1238:c4t0ugCOi411boy1@trecluster-e058a.mongodb.net/chore-db.chores?retryWrites=true&w=majority", {
