@@ -17,16 +17,21 @@ class App extends React.Component {
         filterString: ''
       };
   }
-
+  
   componentDidMount() {
-    axios.get('http://localhost:4000/chores')
+    this.getChores();
+  }
+
+  getChores = () => {
+    axios.get('/chores')
       .then(res => {
         const choresData = res.data;
-        this.setState({ chores: choresData });
-    })
-    .catch(function(error) {
-      console.log(error);
-    });
+        this.setState({ chores: choresData })
+        console.log('Data has been received!')
+      })
+      .catch((error) => {
+        console.log(error)
+      });
   }
 
   render() {
