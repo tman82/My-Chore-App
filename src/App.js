@@ -19,19 +19,15 @@ class App extends React.Component {
   }
   
   componentDidMount() {
-    this.getChores();
-  }
-
-  getChores = () => {
-    axios.get('/chores')
-      .then(res => {
-        const choresData = res.data;
-        this.setState({ chores: choresData })
-        console.log('Data has been received!')
-      })
-      .catch((error) => {
-        console.log(error)
-      });
+    axios.get('/chore-db/chores')
+    .then(res => {
+      const choresData = res.data;
+      this.setState({ chores: choresData })
+      console.log('Data has been received!')
+    })
+    .catch((error) => {
+      console.log(error)
+    });
   }
 
   render() {
