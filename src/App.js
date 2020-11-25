@@ -19,14 +19,13 @@ class App extends React.Component {
   }
   
   componentDidMount() {
-    axios.get('/chore-db/chores')
-    .then(res => {
-      const choresData = res.data;
-      this.setState({ chores: choresData })
-      console.log('Data has been received!')
+    axios.get('http://localhost:4000/chores')
+      .then(res => {
+        const choresData = res.data;
+        this.setState({ chores: choresData });
     })
-    .catch((error) => {
-      console.log(error)
+    .catch(function(error) {
+      console.log(error);
     });
   }
 
