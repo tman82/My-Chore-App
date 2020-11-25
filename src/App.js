@@ -19,7 +19,7 @@ class App extends React.Component {
   }
   
   componentDidMount() {
-    axios.get('/chore-db/chores')
+    axios.get('/chore-db')
       .then(res => {
         const choresData = res.data;
         this.setState({ chores: choresData });
