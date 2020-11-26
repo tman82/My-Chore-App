@@ -19,7 +19,7 @@ class App extends React.Component {
   }
   
   componentDidMount() {
-    axios.get('http://localhost:4000/chores')
+    axios.get('https://cloud.mongodb.com/v2/5e1e31e1553855019b2a78e8#metrics/replicaSet/5f7eb3d304d2aa08fa3ed8ea/explorer/chore-db/chores/')
       .then(res => {
         const choresData = res.data;
         this.setState({ chores: choresData });
