@@ -55,6 +55,7 @@ class App extends React.Component {
                 </div>
               </div> : <h3>Loading...</h3>
             }
+            test
           </div>
         </div>
       </div>
