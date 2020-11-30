@@ -93,7 +93,7 @@ export default class ModalComponent  extends React.Component {
     }
     console.log(newChore)
 
-    axios.post(`http://localhost:4000/chores/addchore`, newChore)
+    axios.post(`/chores/addchore`, newChore)
         .then(res => {
             console.log(res.data)
         })
