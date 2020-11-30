@@ -64,7 +64,7 @@ choreRoutes.route("/:id").delete((req, res) => {
 })
 
 
-app.use("/chores", choreRoutes);
+
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('build'))
@@ -73,6 +73,8 @@ if (process.env.NODE_ENV === 'production') {
     res.sendFile(path.join(__dirname, 'build', 'index.html'))
   })
 }
+
+app.use("/chores", choreRoutes);
 
 app.listen(PORT, function() {
   console.log("Server is running on port " + PORT);
