@@ -30,7 +30,7 @@ class App extends React.Component {
 
   render() {
     const { filterString, chores } = this.state;
-    let choreToRender = chores ? chores.filter(chore =>
+    let choreToRender = chores ? chores.split('').filter(chore =>
       chore.chorePerson.toLowerCase().includes(
         filterString.toLowerCase()
       )
