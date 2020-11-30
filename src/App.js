@@ -18,7 +18,7 @@ class App extends React.Component {
   }
   
   componentDidMount() {
-    axios.get('/chores')
+    axios.get('/')
       .then(res => {
         const choresData = res.data;
         this.setState({ chores: choresData });
