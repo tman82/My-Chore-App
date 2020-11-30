@@ -15,7 +15,7 @@ export class Chore extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:4000/chores')
+        axios.get('/chores')
             .then(res => {
                 this.setState({
                     allChores: res.data
