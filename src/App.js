@@ -2,7 +2,6 @@ import React from 'react';
 import HeaderComponent from './components/HeaderComponent';
 import InputComponent from './components/InputComponent';
 import Chore from './components/Chore';
-//import CreateChore2 from './components/CreateChore2'
 import ModalComponent from './components/ModalComponent'
 import axios from 'axios';
 import './App.css';
@@ -19,7 +18,7 @@ class App extends React.Component {
   }
   
   componentDidMount() {
-    axios.get('http://localhost:4000/chores')
+    axios.get('/chores')
       .then(res => {
         const choresData = res.data;
         this.setState({ chores: choresData });
